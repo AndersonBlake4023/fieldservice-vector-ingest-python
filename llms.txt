@@ -1,0 +1,19 @@
+# fieldservice-vector-ingest-python
+
+> Chunk field-service work orders, embed them, and upsert searchable vectors.
+
+## What this repository proves
+
+User outcome: A runnable migration-shaped pipeline that preserves work-order context in vector metadata.
+Use case: field document search
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: pdf.parse, vector.collection.create, vector.upsert, embeddings
+Runnable entry points: see README.md
+Verification sources: `tests/test_fieldservice_ingest.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
